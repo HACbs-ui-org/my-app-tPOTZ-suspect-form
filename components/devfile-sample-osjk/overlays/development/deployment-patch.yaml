@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-osjk
+  namespace: karthik-jk-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/karthik-jk-tenant/my-app/devfile-sample-osjk@sha256:a575a2633ec12d66bbfe3be7912fcdaa06ac7daa8b312c4f5e56b4b75f37aa99
+        name: my-nodejs
+        resources: {}
+status: {}
