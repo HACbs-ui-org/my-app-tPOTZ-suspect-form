@@ -26,7 +26,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-paug
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/stonesoupuicluster/karthik-jk-tenant/my-app/devfile-sample-paug@sha256:05ab2b1953dd053bb10ed7dd47019d58f90085ba2d10afbbb0f1dd1d3f5cf3cb
         name: my-nodejs
         ports:
         - containerPort: 3001
