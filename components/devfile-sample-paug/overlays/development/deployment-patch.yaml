@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-paug
+  namespace: karthik-jk-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/stonesoupuicluster/karthik-jk-tenant/my-app/devfile-sample-paug@sha256:05ab2b1953dd053bb10ed7dd47019d58f90085ba2d10afbbb0f1dd1d3f5cf3cb
+        name: my-nodejs
+        resources: {}
+status: {}
